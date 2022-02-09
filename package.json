@@ -1,0 +1,47 @@
+{
+  "name": "@dzo/commitlint-config-esdz",
+  "version": "0.0.2",
+  "description": "规范团队Git提交记录，方便回溯。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cz": "git add . && git cz && git push"
+  },
+  "keywords": [
+    "commitlint",
+    "@dzo/commitlint-config-esdz"
+  ],
+  "files": [
+    "index.js",
+    "README.md",
+    ".cz-config.js",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "狄路",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./lib/cz"
+    }
+  },
+  "dependencies": {
+    "husky": "^7.0.4",
+    "longest": "^2.0.1",
+    "right-pad": "^1.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-customizable": "^6.3.0"
+  }
+}
