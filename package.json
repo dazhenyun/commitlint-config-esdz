@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cz": "git add . && git cz && git push"
+    "cz": "git add . && git cz && git push",
+    "prepare": "husky install"
   },
   "keywords": [
     "commitlint",
@@ -27,11 +28,6 @@
       "commit-msg": "commitlint -e HUSKY_GIT_PARAMS"
     }
   },
-  "config": {
-    "commitizen": {
-      "path": "./lib/cz"
-    }
-  },
   "dependencies": {
     "husky": "^7.0.4",
     "longest": "^2.0.1",
@@ -42,6 +38,7 @@
     "@commitlint/config-conventional": "^16.0.0",
     "commitlint-config-cz": "^0.13.3",
     "cz-conventional-changelog": "^3.3.0",
-    "cz-customizable": "^6.3.0"
+    "cz-customizable": "^6.3.0",
+    "husky": "^7.0.0"
   }
 }
