@@ -1,6 +1,6 @@
 ## CommitLint 规范
 
-前端 CommitLint 规范
+前端 CommitLint 规范 1
 
 #### 安装
 
