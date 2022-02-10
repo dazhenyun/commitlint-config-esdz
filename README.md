@@ -2,7 +2,14 @@
 
 前端 CommitLint 规范 1
 
-#### 安装
+#### 相关依赖
+
+```
+npm install husky commitlint @commitlint/config-conventional  --save-dev
+
+```
+
+#### 安装组件
 
 ```shell
 npm install @dzo/commitlint-config-esdz -D
@@ -29,18 +36,14 @@ module.exports = {
 依次在项目根目录执行如下两条命令
 
 ```
-npx husky-init
-npm install husky --save-dev
+npx husky install
 npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+npm set-script cz "git add . && git cz && git push"
 ```
 
 ### package.json 修改:
 
 ```
-  "scripts": {
-    "cz": "git add . && git cz && git push",
-    "prepare": "husky install"
-  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -e HUSKY_GIT_PARAMS"
@@ -66,6 +69,7 @@ npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```bash
 git commit -a -m 'build: xxxxx'
 git commit -a -m 'feat(cli): xxxxx'
+git commit -a -m 'feat(cli): xxxxx' --no-verify // 不验证规范
 ```
 
 字段说明
