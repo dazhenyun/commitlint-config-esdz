@@ -8,7 +8,7 @@ module.exports = {
     // <type>格式小写
     'type-case': [2, 'always', 'lower-case'],
     // <scope> 格式 小写
-    'scope-case': [2, 'never', 'lower-case'],
+    // 'scope-case': [2, 'never', 'lower-case'],
     // <subject> 不能为空
     'subject-empty': [2, 'never'],
     // <subject> 以.为结束标志
