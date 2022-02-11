@@ -2,7 +2,7 @@ module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
     // <type> 不能为空
-    'scope-empty': [2, 'never'],
+    // 'scope-empty': [2, 'never'],
     // <type> 不能为空
     'type-empty': [2, 'never'],
     // <type>格式小写
