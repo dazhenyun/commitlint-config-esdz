@@ -1,6 +1,6 @@
 {
   "name": "@dzo/commitlint-config-esdz",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "规范团队Git提交记录，方便回溯。",
   "main": "index.js",
   "scripts": {
