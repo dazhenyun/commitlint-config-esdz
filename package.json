@@ -1,6 +1,6 @@
 {
-  "name": "@dzo/commitlint-config-esdz",
-  "version": "0.0.8",
+  "name": "commitlint-config-esdz",
+  "version": "0.0.1",
   "description": "规范团队Git提交记录，方便回溯。",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,6 @@
     ".cz-config.js",
     "lib"
   ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "author": "狄路",
   "license": "ISC",
   "dependencies": {

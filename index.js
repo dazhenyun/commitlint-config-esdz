@@ -46,7 +46,10 @@ module.exports = {
         'test',
         // 发布
         'release',
-        'ci'
+		// 持续集成
+        'ci',
+		// 类型定义文件更改
+		'types' 
       ],
     ],
   },

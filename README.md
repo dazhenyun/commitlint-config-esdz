@@ -36,9 +36,9 @@ module.exports = {
 依次在项目根目录执行如下两条命令
 
 ```
-npx husky install
-npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
-npm set-script cz "git add . && git cz && git push"
+npx husky install  // 激活husky配置
+yarn husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'
+npm set-script cz "git add . && git cz && git push"   // 注意：npm set-script xxx在npm7+生效。
 ```
 
 ### package.json 修改:
